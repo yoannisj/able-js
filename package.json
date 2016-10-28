@@ -2,7 +2,7 @@
   "name": "kiso-js",
   "version": "0.1.0",
   "description": "Write lightweight and modular javascript UI components.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/yoannisj/kiso-js/issues"
   },
-  "homepage": "https://github.com/yoannisj/kiso-js#readme"
+  "homepage": "https://github.com/yoannisj/kiso-js#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "seize-js": "^0.1.0"
+  },
+  "devDependencies": {
+    "extend": "^3.0.0"
+  }
 }
