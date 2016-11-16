@@ -15,7 +15,7 @@ module.exports = LiloBase.extend({
   // method for removing Component instance
   destroy: function() {
     this.$el.removeClass('has-' + this.name);
-    this.$el.removeData('kiso_' + this.name);
+    this.$el.removeData('able_' + this.name);
     delete this.$el;
     delete this.el;
   }
