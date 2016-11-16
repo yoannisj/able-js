@@ -1,4 +1,4 @@
-# kiso-js
+# Able-js
 
 Small frontend javascript framework with UI components built on top of [lilo-js](https://github.com/yoannisj/lilo-js).
 
@@ -19,10 +19,10 @@ It also implements the very minimal interface that is expected by Lilo's jquery 
 ### Define and register component
 
 ```js
-var Kiso = require('kiso-js');
-var Base = require('kiso-js/components/base');
-var Collapse = require('kiso-js/mixins/collapse');
-var Panel = require('kiso-js/mixins/panel');
+var Able = require('able-js');
+var Base = require('able-js/components/base');
+var Collapse = require('able-js/mixins/collapse');
+var Panel = require('able-js/mixins/panel');
 
 // register and expose component
 var CollapsePanel = Base.extend([Collapse, Panel], {
@@ -34,7 +34,7 @@ var CollapsePanel = Base.extend([Collapse, Panel], {
 });
 
 // register component
-module.exports = Kiso('collapsepanel', CollapsePanel);
+module.exports = Able('collapsepanel', CollapsePanel);
 ```
 
 ### Use your component in jQuery
@@ -43,24 +43,24 @@ module.exports = Kiso('collapsepanel', CollapsePanel);
 var $el = $('.selector');
 
 // set custom default options for component
-kiso.defaults.collapsepanel = {/* custom defaults */};
+Able.defaults.collapsepanel = {/* custom defaults */};
 
 // instantiate component on DOM element
-collapsepanel = $el.kiso('collapsepanel', {/* options */});
+collapsepanel = $el.able('collapsepanel', {/* options */});
 
 // run methods
 collapsepanel.open();
 collapsepanel.destroy();
 
 // access component instance on element
-var collapsepanel = $el.kiso('collapsepanel');
+var collapsepanel = $el.able('collapsepanel');
 
 // access element on component instance
 var $el = collapsepanel.$el;
 var el = collapsepanel.el;
 
 // means this useless code works
-$el = $el.kiso('collapsepanel').$el;
-el = el.kiso('collapsepanel').el;
-collapsepanel = collapsepanel.el.kiso('collapsepanel');
+$el = $el.able('collapsepanel').$el;
+el = el.able('collapsepanel').el;
+collapsepanel = collapsepanel.el.able('collapsepanel');
 ```

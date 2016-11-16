@@ -1,5 +1,5 @@
 {
-  "name": "kiso-js",
+  "name": "able-js",
   "version": "0.1.0",
   "description": "Write lightweight and modular javascript UI components.",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/yoannisj/kiso-js.git"
+    "url": "git+ssh://git@github.com/yoannisj/able-js.git"
   },
   "keywords": [
     "UI",
@@ -21,9 +21,9 @@
   "author": "Yoannis Jamar <yoannis.j@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yoannisj/kiso-js/issues"
+    "url": "https://github.com/yoannisj/able-js/issues"
   },
-  "homepage": "https://github.com/yoannisj/kiso-js#readme",
+  "homepage": "https://github.com/yoannisj/able-js#readme",
   "dependencies": {
     "jquery": "^3.1.1",
     "seize-js": "^0.1.0"
